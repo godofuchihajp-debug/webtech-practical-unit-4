@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="btn">Click Me</button>
+
+<script>
+function message() {
+    alert("Button Clicked");
+}
+
+let b = document.getElementById("btn");
+b.addEventListener("click", message);
+
+// b.removeEventListener("click", message);
+</script>
+
+</body>
+</html>

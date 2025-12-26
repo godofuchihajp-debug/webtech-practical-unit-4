@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="heading">Original Heading</h2>
+<p class="para">Original Paragraph</p>
+
+<button onclick="changeContent()">Change</button>
+
+<script>
+function changeContent() {
+    document.getElementById("heading").innerHTML = "Heading Changed";
+    document.querySelector(".para").innerHTML = "Paragraph Changed";
+}
+</script>
+
+</body>
+</html>
