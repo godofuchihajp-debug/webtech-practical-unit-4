@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>4.3 Arrow Functions & Template Literals</title>
+</head>
+<body>
+  <h2>4.3 Arrow Functions & Template Literals</h2>
+  <p id="output"></p>
+
+  <script>
+    // Arrow function
+    const greet = name => `Hello, ${name}!`;
+
+    // Template literal
+    let age = 21;
+    document.getElementById("output").textContent =
+      `${greet("Jay")} I am ${age} years old.`;
+  </script>
+</body>
+</html>

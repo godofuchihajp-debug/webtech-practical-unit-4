@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>4.1 Arrays and Methods</title>
+</head>
+<body>
+  <h2>4.1 Arrays and Methods</h2>
+  <script>
+    let fruits = ["apple", "banana"];
+    fruits.push("orange");   // Adds element
+    console.log("After push:", fruits);
+
+    fruits.pop();            // Removes last element
+    console.log("After pop:", fruits);
+
+    let numbers = [3, 1, 4];
+    numbers.sort();          // Sorts array
+    console.log("Sorted numbers:", numbers);
+  </script>
+</body>
+</html>

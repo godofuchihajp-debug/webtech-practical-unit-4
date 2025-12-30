@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>4.4 Fetch API Example</title>
+</head>
+<body>
+  <h2>4.4 Fetch JSON Data</h2>
+  <ul id="apiOutput">Loading...</ul>
+
+  <script>
+    fetch("https://api.publicapis.org/entries")
+      .then(response => response.json())
+      .then(data => {
+        let list = document.getElementById("apiOutput");
+        list.innerHTML = "";
+        data.entries.slice(0, 5).forEach(entry => {
+          let li = document.createElement("li");
+          li.textContent = `${entry.API} - ${entry.Description}`;
+          list.appendChild(li);
+        });
+      })
+      .catch(error => {
+        document.getElementById("apiOutput").textContent = "Error fetching data.";
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
